@@ -4,34 +4,12 @@
 
 #include "FileManager.h"
 
-void FileManager::saveGrades(College &college, const string &filename) {
- ofstream file(filename,ios::app);
- file<< "code,grade" << endl;
- file << college.toString()<<endl;
- file.close();
-}
-
-
-string FileManager::readbyLine(const string &filename) {
-    ifstream file(filename);
-    string line;
-    string lineText;
-
-    while (getline(file, lineText)) {
-        line=line+lineText +"\n";
-    }
-    file.close();
-    return line;
-}
-
-string FileManager::writeByLine(const string &filename) {
-
-}
-
-void FileManager::saveGradesB(College &college, const string &filename) {
+void FileManager::saveGradesB(map<string,double>&grades,  const string &filename) {
     ofstream myfile(filename, ios::binary);
-    for (const auto &grade: college.getGrades()) {
-        myfile.write(reinterpret_cast<const char*>(&grade.first), sizeof(grade.first));
+    for (const auto &grade: grades) {
+        size_t len = grade.first.size();
+        myfile.write(reinterpret_cast<const char*>(&len), sizeof(len));
+        myfile.write(grade.first.c_str(), len);
         myfile.write(reinterpret_cast<const char*>(&grade.second), sizeof(grade.second));
     }
     myfile.close();
@@ -44,37 +22,50 @@ College FileManager::readDataCollegeB(const string &filename) {
         throw invalid_argument("No se pudo abrir el archivo");
     }
     while (!myReadFile.eof()) {
-        string code;
-        double grade;
-        myReadFile.read(reinterpret_cast<char*>(&code), sizeof(code));
-        myReadFile.read(reinterpret_cast<char*>(&grade), sizeof(grade));
+        size_t len;
+        myReadFile.read(reinterpret_cast<char*>(&len), sizeof(len));
         if (myReadFile.gcount() > 0) {
+            string code;
+            code.resize(len);
+            myReadFile.read(&code[0], len);
+            double grade;
+            myReadFile.read(reinterpret_cast<char*>(&grade), sizeof(grade));
             college.addGrade(code, grade);
         }
     }
     myReadFile.close();
     return college;
 }
-void FileManager::saveGradesMap(College& college, const string &filename) {
+
+void FileManager::saveGradesMap(map<string,double>&grades, const string &filename) {
     ofstream myFile(filename, ios::binary);
     string header = "code,grade\n";
     myFile.write(header.c_str(), header.size());
-    for (const auto &grade: college.getGrades()) {
-        myFile.write(reinterpret_cast<const char*>(&grade.first), sizeof(grade.first));
+    for (const auto &grade: grades) {
+        size_t len = grade.first.size();
+        myFile.write(reinterpret_cast<const char*>(&len), sizeof(len));
+        myFile.write(grade.first.c_str(), len);
         myFile.write(reinterpret_cast<const char*>(&grade.second), sizeof(grade.second));
     }
     myFile.close();
 }
+
 map<string, double> FileManager::readDataCollegeMap(const string &filename) {
     ifstream myFile(filename, ios::binary);
     map<string, double> grades;
     string line;
-    while (getline(myFile, line)) {
-        stringstream ss(line);
-        string code;
-        double grade;
-        ss >> code >> grade;
-        grades[code] = grade;
+    getline(myFile, line); // Skip header
+    while (!myFile.eof()) {
+        size_t len;
+        myFile.read(reinterpret_cast<char*>(&len), sizeof(len));
+        if (myFile.gcount() > 0) {
+            string code;
+            code.resize(len);
+            myFile.read(&code[0], len);
+            double grade;
+            myFile.read(reinterpret_cast<char*>(&grade), sizeof(grade));
+            grades[code] = grade;
+        }
     }
     myFile.close();
     return grades;

@@ -36,7 +36,7 @@ string College::toString() {
     return s.str();
 }
 
-const map<string, double> &College::getGrades() const {
+const map<string, double> &College::getGrades() {
     return grades;
 }
 

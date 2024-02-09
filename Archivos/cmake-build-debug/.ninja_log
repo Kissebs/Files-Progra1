@@ -1,0 +1,24 @@
+# ninja log v5
+10	523	7291453830021665	CMakeFiles/main.dir/src/main.cpp.obj	7b0745cf91648141
+6	552	7291453830331950	CMakeFiles/main.dir/src/College.cpp.obj	bb4796ef26920dff
+1	615	7291453830952510	CMakeFiles/main.dir/src/FileManager.cpp.obj	7e32d29bba4f3e7a
+615	720	7291453831983450	main.exe	8801c396f19140f0
+3	486	7291463287007444	CMakeFiles/main.dir/src/main.cpp.obj	7b0745cf91648141
+486	595	7291463288068412	main.exe	8801c396f19140f0
+3	510	7291469604465746	CMakeFiles/main.dir/src/main.cpp.obj	7b0745cf91648141
+510	619	7291469605526714	main.exe	8801c396f19140f0
+3	470	7291470215147060	CMakeFiles/main.dir/src/main.cpp.obj	7b0745cf91648141
+471	572	7291470216137962	main.exe	8801c396f19140f0
+9	595	7291471929831261	CMakeFiles/main.dir/src/College.cpp.obj	bb4796ef26920dff
+3	589	7291475243534416	CMakeFiles/main.dir/src/College.cpp.obj	bb4796ef26920dff
+9	634	7291475243994841	CMakeFiles/main.dir/src/FileManager.cpp.obj	7e32d29bba4f3e7a
+3	508	7291476071998636	CMakeFiles/main.dir/src/main.cpp.obj	7b0745cf91648141
+509	616	7291476073044631	main.exe	8801c396f19140f0
+3	616	7291477269272331	CMakeFiles/main.dir/src/FileManager.cpp.obj	7e32d29bba4f3e7a
+3	499	7291478179246261	CMakeFiles/main.dir/src/main.cpp.obj	7b0745cf91648141
+500	613	7291478180357267	main.exe	8801c396f19140f0
+3	584	7291480673036043	CMakeFiles/main.dir/src/FileManager.cpp.obj	7e32d29bba4f3e7a
+584	692	7291480674076992	main.exe	8801c396f19140f0
+9	535	7291483682716616	CMakeFiles/main.dir/src/main.cpp.obj	7b0745cf91648141
+3	587	7291483683247102	CMakeFiles/main.dir/src/FileManager.cpp.obj	7e32d29bba4f3e7a
+587	697	7291483684328084	main.exe	8801c396f19140f0

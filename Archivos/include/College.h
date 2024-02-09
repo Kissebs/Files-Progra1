@@ -12,11 +12,9 @@ class College {
 private:
     map<string, double> grades;
 public:
-    //gets and sets
-    const map<string, double> &getGrades() const;
-
+    //getters and setters
+    const map<string, double> &getGrades();
     //Methods
-
     void addGrade(string code, double grade);
     void showAllGrades();
     friend ostream &saveGrades(ostream &os, College college);

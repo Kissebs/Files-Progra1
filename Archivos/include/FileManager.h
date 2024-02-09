@@ -24,11 +24,11 @@ public:
 
     static string writeByLine(const string &filename);
 
-    static void saveGradesB(College &college, const string &filename);
+    static void saveGradesB(map<string,double>&grades, const string &filename);
 
     static College readDataCollegeB(const string &filename);
 
-    static void saveGradesMap(College& college, const string &filename);
+    static void saveGradesMap(map<string,double>&grades, const string &filename);
 
     static map<string, double> readDataCollegeMap(const string &filename);
 
