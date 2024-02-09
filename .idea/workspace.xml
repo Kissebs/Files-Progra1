@@ -9,12 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c312b03-d4b0-4367-8568-4ee4eb012a37" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Files-Progra1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="1c312b03-d4b0-4367-8568-4ee4eb012a37" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +59,7 @@
       <updated>1707441443516</updated>
       <workItem from="1707441444828" duration="404000" />
       <workItem from="1707441905921" duration="239000" />
+      <workItem from="1707442181133" duration="662000" />
     </task>
     <servers />
   </component>
