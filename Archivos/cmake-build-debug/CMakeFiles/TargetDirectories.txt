@@ -1,4 +1,4 @@
-C:/Users/sebas/CLionProjects/Archivos/cmake-build-debug/CMakeFiles/main.dir
-C:/Users/sebas/CLionProjects/Archivos/cmake-build-debug/CMakeFiles/copy-compile-commands.dir
-C:/Users/sebas/CLionProjects/Archivos/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/sebas/CLionProjects/Archivos/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/progra1/Files Progra1/Files-Progra1/Archivos/cmake-build-debug/CMakeFiles/main.dir
+C:/progra1/Files Progra1/Files-Progra1/Archivos/cmake-build-debug/CMakeFiles/copy-compile-commands.dir
+C:/progra1/Files Progra1/Files-Progra1/Archivos/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/progra1/Files Progra1/Files-Progra1/Archivos/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,5 @@
+# ninja log v5
+8	539	7291445944520271	CMakeFiles/main.dir/src/main.cpp.obj	7b0745cf91648141
+0	560	7291445944740467	CMakeFiles/main.dir/src/College.cpp.obj	bb4796ef26920dff
+5	620	7291445945341017	CMakeFiles/main.dir/src/FileManager.cpp.obj	7e32d29bba4f3e7a
+621	728	7291445946391975	main.exe	8801c396f19140f0

@@ -4,7 +4,7 @@
 
 #include "FileManager.h"
 
-/*void FileManager::saveGrades(College &college, const string &filename) {
+void FileManager::saveGrades(College &college, const string &filename) {
  ofstream file(filename,ios::app);
  file<< "code,grade" << endl;
  file << college.toString()<<endl;
@@ -26,7 +26,7 @@ string FileManager::readbyLine(const string &filename) {
 
 string FileManager::writeByLine(const string &filename) {
 
-}*/
+}
 
 void FileManager::saveGradesB(College &college, const string &filename) {
     ofstream myfile(filename, ios::binary);
